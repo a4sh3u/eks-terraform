@@ -1,9 +1,16 @@
-#  Local .terraform directories
-**/.terraform/*
+# tfplan-out, .terraform and .venv directories
+tfplan-out
+.terraform
+__pycache__
+.venv
 
-# .tfstate files
+# tfstate and .pip-installed files
 *.tfstate
 *.tfstate.*
+.pip-installed
 
-# .tfvars files
-*.tfvars
+# secrets
+.kubeconfig
+.env
+*kubeconfig*
+*config-map*
