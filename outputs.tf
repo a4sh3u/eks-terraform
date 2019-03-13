@@ -22,3 +22,8 @@ output "region" {
   description = "AWS region."
   value       = "${var.region}"
 }
+
+output "workers_asg_names" {
+  description = "Names of the autoscaling groups containing workers."
+  value       = "${module.eks.workers_asg_names}"
+}
